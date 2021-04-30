@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 
 class Counter extends Component {
-  
-
-  // constructor(){
-  //   super()
-  //     this.handleIncrement = this.handleIncrement.bind(this)
-  // }
-
   renderTags() {
     if (this.state.tags.length === 0) return <p> There are no tags!</p>;
     return (
@@ -19,21 +12,16 @@ class Counter extends Component {
     );
   }
 
-
   render() {
-    console.log(this.props.counter)
+    console.log(this.props.counter, 'yo');
     return (
       <div>
-        
         <span className={this.getBadgeClasses()}> {this.formatCount()}</span>
 
-        {/* <button onClick={ () => this.handleIncrement(product)} className="btn btn-secondary btn-sm"> Increment </button> */}
-
         <button
-          onClick={()=> this.props.onIncrement(this.props.counter)}
+          onClick={() => this.props.onIncrement(this.props.counter)}
           className="btn btn-secondary btn-sm"
         >
-          
           Increment
         </button>
         <button
@@ -42,7 +30,6 @@ class Counter extends Component {
         >
           Delete
         </button>
-        {/* {this.state.tags.length === 0 && 'Please create a new tag'} */}
       </div>
     );
   }
