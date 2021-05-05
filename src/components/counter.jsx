@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
 class Counter extends Component {
-
-
   render() {
     console.log(this.props.eder, 'yo');
     return (
