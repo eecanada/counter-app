@@ -12,6 +12,18 @@ class App extends Component {
       { id: 4, value: 1 },
     ],
   };
+  
+  constructor(){
+    super()
+    console.log('App-Constructor')
+  }
+
+   componentDidMount(){
+     //Ajac Call
+     console.log('app mounted')
+   }
+
+   
 
   handleReset = () => {
     const counters = this.state.counters.map((counter) => {
