@@ -23,7 +23,7 @@ class App extends Component {
      console.log('app mounted')
    }
 
-   
+
 
   handleReset = () => {
     const counters = this.state.counters.map((counter) => {
@@ -49,6 +49,7 @@ class App extends Component {
     this.setState({ counters });
   };
   render() {
+    console.log('Rendered')
     return (
       <React.Fragment>
         <NavBar
