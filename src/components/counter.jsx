@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 
 class Counter extends Component {
-  componentDidUpdate(prevProps, prevState){
-    console.log('prevProps', prevProps)
-    console.log('prevProps', prevState)
-    if(prevProps.counter.value !== this.props.counter.value){
-      
+  componentDidUpdate(prevProps, prevState) {
+    console.log('prevProps', prevProps);
+    console.log('prevProps', prevState);
+    if (prevProps.counter.value !== this.props.counter.value) {
     }
   }
-
 
   render() {
     console.log(this.props.eder, 'yo');
