@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    //Ajac Call
+    //Ajax Call
     console.log('app mounted');
   }
 

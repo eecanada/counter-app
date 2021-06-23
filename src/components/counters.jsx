@@ -15,7 +15,6 @@ class Counters extends Component {
               key={counter.id}
               onDelete={onDelete}
               counter={counter}
-              eder={'eder'}
               onIncrement={onIncrement}
             />
           );
